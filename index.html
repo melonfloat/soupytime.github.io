@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Soupytime</title>
+<title>soupytime</title>
+
+<style>
+  .red-button {
+    background-color: #C9605D;
+    color: #FFFDF5;
+    border: none;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;       /* stack heading, text, buttons vertically */
+      justify-content: center;      /* center vertically */
+      align-items: center;          /* center horizontally */
+      height: 100vh;                /* make body take full screen height */
+      margin: 0;                    /* remove default browser margins */
+      background-color: #FFFDF5;    /* light background */
+      font-family: Arial, sans-serif;
+  }
+
+  h1, p {text-align: center; margin: 10px;} 
+        
+</style>
 </head>
+
 <body>
-  <h1>Welcome to Soupytime!</h1>
-  <p>This is my first website hosted on GitHub Pages.</p>
+  <h1>welcome to soupytime!</h1>
+  <p>a soup themed productivity timer (wip)</p>
+
+<div class="button-container">
+    <button title="pomodoro" class="red-button" onclick="alert('pomodoro')">pomodoro</button>
+    <button title="short break" class="red-button" onclick="alert('short break')">short break</button>
+    <button title="long break" class="red-button" onclick="alert('long break')">long break</button>
+</div>
+
 </body>
 </html>
